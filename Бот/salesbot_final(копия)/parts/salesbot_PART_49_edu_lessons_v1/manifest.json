@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_49_edu_lessons_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/edu_lessons/v1",
+      "dst": "modules/edu_lessons/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

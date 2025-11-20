@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title or "На Счастье · Тренер продаж" }}</title>
+  <link rel="stylesheet" href="/mini/brand/static/brand.css">
+</head>
+<body>
+  <div class="watermark">На Счастье · salesbot</div>
+  <div class="container">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="brand">На Счастье</div>
+      <div class="toolbar">
+        <button class="btn" onclick="location.href='/mini/brand/health'">Health</button>
+        <button class="btn" onclick="location.href='/mini/brand/hub'">Hub</button>
+      </div>
+    </div>
+    {% block content %}{% endblock %}
+    <div class="footer">© {{ year or 2025 }} На Счастье · Мини‑вебкит</div>
+  </div>
+</body>
+</html>

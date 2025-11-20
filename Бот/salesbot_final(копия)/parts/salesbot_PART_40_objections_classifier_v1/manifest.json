@@ -1,0 +1,20 @@
+{
+  "pack_name": "PART_40_objections_classifier_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/objections_classifier/v1",
+      "dst": "modules/objections_classifier/v1"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/objections/v3/glue_classifier.py",
+      "dst": "modules/objections/v3/glue_classifier.py"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

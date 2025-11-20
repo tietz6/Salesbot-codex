@@ -1,0 +1,20 @@
+{
+  "pack_name": "PART_07_core_router_registry",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/core/router",
+      "dst": "core/router"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/tools",
+      "dst": "tools"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

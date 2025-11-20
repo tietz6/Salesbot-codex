@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_37_api_voice_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/api/voice/v1",
+      "dst": "api/voice/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

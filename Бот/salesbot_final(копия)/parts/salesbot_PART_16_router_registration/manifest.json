@@ -1,0 +1,20 @@
+{
+  "pack_name": "PART_16_router_registration",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/core/router",
+      "dst": "core/router"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules",
+      "dst": "modules"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

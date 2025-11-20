@@ -1,0 +1,6 @@
+c5bf3a522acfc4f0a4fc73fa1759dc5bb76f314d48f4105361864f118d07e2b8  manifest.json
+5116269feaaeb2ff4650a8defaef2dfa8a9b3c775c4d29d80a0e78645b4fcc93  payload/core/acl/v1/__init__.py
+e01ffa11c4008f3351b9945baeda68b144f7a1557f504ef71a6cba5a606f3305  payload/core/acl/v1/roles.py
+a77699c5d6e73512f6385b4ed660da5c2d32e199c0286b2a02d64756cb0f080d  payload/core/acl/v1/permissions.py
+ea0fd7fe8bdbd9f8f5c03b1c26caffb11f9f701224dd28a2efa135c88ab24ac8  payload/core/acl/v1/middleware.py
+0a019ac522ec08320152e80e8ad26580b8745b554bb95966b7ef233e28b87ea3  payload/core/acl/v1/README_INSTALL.txt

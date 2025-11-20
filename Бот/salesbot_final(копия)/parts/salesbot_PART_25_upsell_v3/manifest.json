@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_25_upsell_v3",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/modules/upsell/v3",
+      "dst": "modules/upsell/v3"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

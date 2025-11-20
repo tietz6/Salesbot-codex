@@ -1,0 +1,30 @@
+{
+  "pack_name": "PART_38_integrations_patch_v4_http_env",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/integrations/patch_v4/__init__.py",
+      "dst": "integrations/patch_v4/__init__.py"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/integrations/patch_v4/env.py",
+      "dst": "integrations/patch_v4/env.py"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/integrations/patch_v4/http_client.py",
+      "dst": "integrations/patch_v4/http_client.py"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/integrations/patch_v3/__init__.py",
+      "dst": "integrations/patch_v3/__init__.py"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

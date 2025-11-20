@@ -1,0 +1,35 @@
+[
+  {
+    "id": "L-1001",
+    "goal": "anniversary",
+    "budget": "mid",
+    "deadline_days": 3,
+    "status": "new",
+    "client": "Наталья",
+    "notes": "Годовщина. Хочет нежное видео с датами.",
+    "amount_est": 3500,
+    "assigned_to": null
+  },
+  {
+    "id": "L-1002",
+    "goal": "birthday",
+    "budget": "low",
+    "deadline_days": 2,
+    "status": "new",
+    "client": "Мама",
+    "notes": "Короткое искреннее поздравление. Срочно.",
+    "amount_est": 1500,
+    "assigned_to": null
+  },
+  {
+    "id": "L-1003",
+    "goal": "corporate",
+    "budget": "high",
+    "deadline_days": 7,
+    "status": "qualified",
+    "client": "Шеф",
+    "notes": "Солидно, без пафоса. Нужны цифры, чёткие шаги.",
+    "amount_est": 12000,
+    "assigned_to": "alex"
+  }
+]

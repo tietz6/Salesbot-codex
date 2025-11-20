@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_52_deepseek_persona_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/deepseek_persona/v1",
+      "dst": "modules/deepseek_persona/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_56_voice_arena_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/voice_arena/v1",
+      "dst": "modules/voice_arena/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

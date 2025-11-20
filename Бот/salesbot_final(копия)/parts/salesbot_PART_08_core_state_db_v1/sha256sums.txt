@@ -1,0 +1,7 @@
+6fdfe0049cd192605a610a0a105ed315bc29c966b8aaf383f86865f28dc4df56  manifest.json
+4a4e18910aa0a6c47eb9220cb91d8e66a2606153fd020e3fad1351098c0beab1  payload/core/state/v1/__init__.py
+82971b027df1105e054b1e78a044c02882d07e33892eca500287d328e5c62737  payload/core/state/v1/state.py
+8c3880224822a40c2a8fdc33dd5ccc497ce05a82e0bd12b5484e1818e4e1f235  payload/core/state/v1/README_INSTALL.txt
+d366decdec1982732358a5a3c9913c5e150ad432ad3d637b4cf2d322cc84867e  payload/core/db/v1/__init__.py
+123a8f36f6843aa4a7e4ca8cda01bda0b8cd7f591cb09a315c664c526d4f974b  payload/core/db/v1/sqlite.py
+6233e2d01a4ff3fb7297d0483fe79e75a5849cd48470bf8dc6d6068b63d2c942  payload/core/db/v1/README_INSTALL.txt

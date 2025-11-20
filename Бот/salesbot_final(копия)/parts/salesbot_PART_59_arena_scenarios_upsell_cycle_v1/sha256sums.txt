@@ -1,0 +1,5 @@
+FILE  manifest.json
+FILE  payload/modules/arena_scenarios/upsell_cycle/v1/service.py
+FILE  payload/modules/arena_scenarios/upsell_cycle/v1/routes.py
+FILE  payload/modules/arena_scenarios/upsell_cycle/v1/__init__.py
+FILE  payload/modules/arena_scenarios/upsell_cycle/v1/data/scenarios.json

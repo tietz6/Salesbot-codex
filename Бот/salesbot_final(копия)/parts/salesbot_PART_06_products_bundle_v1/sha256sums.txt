@@ -1,0 +1,4 @@
+1cae078a01661e8c2656c3728158f1b4bb08c075757d171b7608222655d2365c  manifest.json
+0c3cc5b89287d2f96a12f5b6cd06983a748862ab2f272ab22ad83a8b688576e1  payload/products/bundle/v1/__init__.py
+dbc0b08cc01567e73f3e04769eb63d1c6fa984f33472db46b089db4a1333782a  payload/products/bundle/v1/README_INSTALL.txt
+1ae1781013b2807a24d1d3e3e9d5870b4d67b33253fb990b4fbd0da27ecc9330  payload/products/bundle/v1/builder.py

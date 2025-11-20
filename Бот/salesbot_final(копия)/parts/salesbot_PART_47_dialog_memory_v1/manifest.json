@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_47_dialog_memory_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/dialog_memory/v1",
+      "dst": "modules/dialog_memory/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

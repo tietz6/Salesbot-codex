@@ -1,0 +1,5 @@
+aa8efd3d0d369292db04aa2cc78d338fa1133d66598d2865b43c209d2ae00239  manifest.json
+3bf117d16bd77bb4be17e4232e0fa7fed8ac90cf11d3a52d8873418a60d6eb0e  payload/modules/upsell/v3/__init__.py
+79031b281ff2ce7fbed601e2ac65ea5f3c12c60388613f67fd535c372e127892  payload/modules/upsell/v3/README_INSTALL.txt
+3fd90b0a0ca92ab8db2ded1793d1bd1649b09b4b98405c2234f6ea9965a25813  payload/modules/upsell/v3/engine.py
+2119d0b1324575ed2b9d9b5e7ad16f46007d8d39514c5ec841d9db598e6dcb70  payload/modules/upsell/v3/routes.py

@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_29_mini_webkit_v3",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/apps/mini_webkit/v3",
+      "dst": "apps/mini_webkit/v3"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

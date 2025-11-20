@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_14_modules_sleeping_dragon_v3",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/modules/sleeping_dragon/v3",
+      "dst": "modules/sleeping_dragon/v3"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

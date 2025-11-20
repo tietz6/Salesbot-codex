@@ -1,0 +1,7 @@
+c69fdd55ff936ddd18de38c54de75f1559831628451ebadbc384cbdbe93534d4  manifest.json
+5c72cc2225b42158b936a10dada586ff7fde60bf8a55c3420a329f05e8669b31  payload/apps/mini_webkit/brand/v1/theme.json
+a9d2970d15f19fcfd3ba8ef7f29b7975333603006f0c3368cfe632552816fafa  payload/apps/mini_webkit/brand/v1/routes.py
+6a96ac19e07adb3304a7743d52aea3e3f6173d6d77a99a40345f8b980c683d9b  payload/apps/mini_webkit/brand/v1/__init__.py
+1a874230cea274e46e27052db27fd5ff5dcd1953e1665086fe9249a3c9386425  payload/apps/mini_webkit/brand/v1/static/brand.css
+dc8b2a58c61e0c7d9be8f260c6e31da69c79bf98fe8954839229b5289e83844e  payload/apps/mini_webkit/brand/v1/templates/base.html
+d696502069633eb849473d1f442432275f777955888c57415114761802ed954b  payload/apps/mini_webkit/brand/v1/templates/hub.html

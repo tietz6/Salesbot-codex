@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_18_pipelines_glue_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/pipelines",
+      "dst": "pipelines"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

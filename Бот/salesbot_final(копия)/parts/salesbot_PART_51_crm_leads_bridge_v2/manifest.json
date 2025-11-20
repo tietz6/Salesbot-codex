@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_51_crm_leads_bridge_v2",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/bridges/crm_leads_bridge/v2",
+      "dst": "bridges/crm_leads_bridge/v2"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

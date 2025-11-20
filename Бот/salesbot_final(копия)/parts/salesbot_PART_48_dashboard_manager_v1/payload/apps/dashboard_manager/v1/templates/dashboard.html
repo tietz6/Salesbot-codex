@@ -1,0 +1,30 @@
+
+{% extends "/apps/mini_webkit/brand/v1/templates/base.html" %}
+{% block content %}
+<div class="h1">Личный кабинет менеджера</div>
+
+<div class="kpi">
+  <div class="item"><div class="label">Всего тренировок</div><div class="value">{{ stats.total_sessions }}</div></div>
+  <div class="item"><div class="label">Средний балл</div><div class="value">{{ stats.avg_score }}</div></div>
+  <div class="item"><div class="label">Слабые зоны</div><div class="value">{{ stats.weak_count }}</div></div>
+  <div class="item"><div class="label">Сильные стороны</div><div class="value">{{ stats.strong_count }}</div></div>
+</div>
+
+<div class="chart">
+  <h3>Прогресс по баллам</h3>
+  <img src="/dashboard_manager/v1/progress/{{ manager_id }}" style="width:100%;border-radius:12px;">
+</div>
+
+<h3 style="margin-top:24px;">Последние ошибки</h3>
+<table class="table">
+  <tr><th>Сессия</th><th>Ошибки</th><th>Баллы</th></tr>
+  {% for row in table %}
+  <tr>
+    <td>{{ row.session }}</td>
+    <td>{{ row.errors }}</td>
+    <td>{{ row.score }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

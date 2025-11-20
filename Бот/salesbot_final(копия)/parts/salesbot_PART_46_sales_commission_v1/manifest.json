@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_46_sales_commission_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/sales_commission/v1",
+      "dst": "modules/sales_commission/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>{{TITLE}}</title>
+  <style>
+    :root { --bg:#0f1115; --card:#171923; --fg:#e7eef7; --muted:#9aa3af; --acc:#7c3aed; }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,sans-serif}
+    .wrap{max-width:720px;margin:0 auto;padding:16px}
+    .card{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    h1{font-size:22px;margin:0 0 8px} h2{font-size:18px;margin:16px 0 8px;color:var(--acc)}
+    .muted{color:var(--muted);font-size:13px}
+    .row{display:flex;gap:8px;flex-wrap:wrap}
+    .pill{padding:6px 10px;border-radius:999px;background:#232637;color:#cbd5e1;font-size:12px}
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{padding:8px;border-bottom:1px solid #232637} th{text-align:left;color:#cbd5e1}
+    .bubble{padding:10px 12px;border-radius:14px;margin:6px 0;max-width:88%}
+    .u{background:#1f2937;align-self:flex-end}
+    .c{background:#111827;border:1px solid #222}
+    .flex{display:flex;gap:8px;flex-direction:column}
+    .ok{color:#22c55e}.bad{color:#ef4444}.warn{color:#f59e0b}
+    .foot{margin-top:12px;font-size:12px;color:#94a3b8}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      {{BODY}}
+      <div class="foot">mini_webkit v3 · На Счастье</div>
+    </div>
+  </div>
+</body>
+</html>

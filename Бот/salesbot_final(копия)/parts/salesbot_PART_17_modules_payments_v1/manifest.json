@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_17_modules_payments_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/modules/payments/v1",
+      "dst": "modules/payments/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

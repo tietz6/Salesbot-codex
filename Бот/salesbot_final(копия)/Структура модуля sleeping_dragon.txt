@@ -1,0 +1,46 @@
+modules/sleeping_dragon/
+├─ README.md
+├─ manifest.yaml
+├─ roles/
+│  ├─ coach.md
+│  ├─ judge.md
+│  └─ client_personas.md
+├─ policies/
+│  ├─ tone_guide.md
+│  ├─ safety_guide.md
+│  └─ escalation_rules.md
+├─ prompt_kits/
+│  ├─ router_prompts.yaml
+│  ├─ recovery_prompts.yaml
+│  └─ objection_prompts.yaml
+├─ scenarios/
+│  ├─ cold_start/
+│  │  ├─ script_map.md
+│  │  └─ cases.jsonl
+│  ├─ mid_dialog/
+│  │  ├─ script_map.md
+│  │  └─ cases.jsonl
+│  └─ payment_edge/
+│     ├─ script_map.md
+│     └─ cases.jsonl
+├─ datasets/
+│  ├─ dialogs_train.jsonl
+│  ├─ dialogs_eval.jsonl
+│  └─ labels_schema.md
+├─ checklists/
+│  ├─ recovery_checklist.md
+│  ├─ payment_checklist.md
+│  └─ empathy_microskills.md
+├─ rubrics/
+│  ├─ scoring_rubric.md
+│  └─ mistakes_catalog.md
+├─ templates/
+│  ├─ dm_nudge.txt
+│  ├─ voice_note.txt
+│  └─ followup_menu.txt
+├─ analytics/
+│  ├─ events_spec.md
+│  └─ metrics.md
+└─ maps/
+   ├─ state_machine.md
+   └─ triggers_matrix.md

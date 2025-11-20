@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_03_integrations_patch_v3",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/integrations/patch_v3",
+      "dst": "integrations/patch_v3"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": false,
+    "touch_startup": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "brand": "На Счастье",
+  "colors": {
+    "bg": "#0f0f14",
+    "card": "#15151d",
+    "accent": "#ff6fb4",
+    "accent2": "#ffd166",
+    "text": "#e9e9ee",
+    "muted": "#b6b6c3",
+    "success": "#28c790",
+    "warning": "#ffb703",
+    "danger": "#ef476f"
+  }
+}

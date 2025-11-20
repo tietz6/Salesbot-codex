@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_02_core_acl_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/core/acl/v1",
+      "dst": "core/acl/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": false,
+    "touch_startup": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_53_emotion_detector_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/emotion_detector/v1",
+      "dst": "modules/emotion_detector/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

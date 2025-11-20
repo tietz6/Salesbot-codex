@@ -1,0 +1,20 @@
+{
+  "pack_name": "PART_44_sleeping_dragon_rules_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/sleeping_dragon_rules/v1",
+      "dst": "modules/sleeping_dragon_rules/v1"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/sleeping_dragon/v4/glue_rules.py",
+      "dst": "modules/sleeping_dragon/v4/glue_rules.py"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

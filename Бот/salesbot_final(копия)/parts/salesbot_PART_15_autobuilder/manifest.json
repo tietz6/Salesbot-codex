@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_15_autobuilder",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/autobuilder",
+      "dst": "autobuilder"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": false,
+    "touch_startup": true
+  }
+}

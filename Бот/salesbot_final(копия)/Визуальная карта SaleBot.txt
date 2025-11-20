@@ -1,0 +1,182 @@
+salesbot_final/
+├─ parts/                           ← тут лежат МОДУЛИ в ZIP (источник)
+│  ├─ salesbot_PART_25_upsell_v3/
+│  │  ├─ manifest.json
+│  │  ├─ sha256sums
+│  │  └─ payload/
+│  │     └─ modules/
+│  │        └─ upsell/
+│  │           └─ v3/
+│  │              ├─ __init__.py
+│  │              ├─ engine.py
+│  │              ├─ routes.py
+│  │              └─ README_INSTALL
+│  └─ ... (всего ~66 таких директорий c payload)
+│
+├─ autobuilder_module/              ← «применялка» модулей
+│  └─ autobuilder/
+│     ├─ apply_all.py               ← читает parts/*/payload и раскладывает
+│     ├─ utils_zip.py
+│     ├─ utils_manifest.py
+│     └─ utils_fs.py
+│
+├─ salesbot_INSTALLER_DELTA_v3_FULL/← инсталлер и рантайм
+│  ├─ installer.bat                 ← шаг 2: «применить модули»
+│  ├─ start_api.bat                 ← шаг 3: «запустить API»
+│  ├─ _installer/
+│  │  └─ runtime/
+│  │     ├─ requirements.txt
+│  │     └─ apply_runtime.py        ← вызывает autobuilder.apply_all
+│  ├─ config/
+│  │  ├─ settings.toml              ← порты/пути/переменные
+│  │  └─ registry.toml              ← какие модули включать (см. ниже)
+│  └─ .venv/                        ← изолированная среда Python для API
+│
+├─ api/                             ← РАБОЧИЙ КОД API (сюда кладутся payload)
+│  ├─ main.py                       ← точка входа FastAPI
+│  ├─ core/
+│  │  ├─ app_factory.py             ← создаёт FastAPI, подключает роуты
+│  │  ├─ router_registry.py         ← регистрация модулей
+│  │  └─ state.py                   ← общие состояния/DI
+│  ├─ bridges/                      ← интеграции (DeepSeek, CRM, т.д.)
+│  │  ├─ deepllm_deepseek.py
+│  │  └─ ...
+│  ├─ modules/                      ← СЮДА «раскладываются» payload из parts
+│  │  ├─ upsell/
+│  │  │  └─ v3/
+│  │  │     ├─ engine.py
+│  │  │     └─ routes.py            ← FastAPI APIRouter
+│  │  ├─ objections/
+│  │  │  └─ v3/ ...
+│  │  └─ ...                        ← остальные 60+ модулей
+│  └─ public/
+│     └─ health.py                  ← /api/public/v1/health
+│
+└─ tools/                           ← вспомогательные скрипты (опционально)
+
+
+
+
+
+salesbot/
+│
+├── api/                 ← основной мозг
+├── core/                ← системные службы
+├── modules/             ← 46 модулей тренажёра
+├── tools/               ← утилиты и вспомогалки
+├── runtime/             ← базы данных, состояние, хранилище
+├── voice/               ← голосовой движок
+├── deepllm/             ← DeepSeek-интеграция
+├── router/              ← маршрутизация диалогов
+├── appbuilder/          ← конструктор сценариев
+├── payments/            ← платежи, тарифы
+├── crm/                 ← CRM для руководителей
+└── parts/               ← ПАТЧИ (те самые ZIP 3–6 КБ)
+
+
+
+
+api/
+│
+├── main.py            ← запуск API
+├── dependencies.py
+├── config.py
+├── state/             ← хранилище состояний менеджеров
+├── voice/             ← обработка речи
+├── dialogs/           ← диалоговый движок
+├── deepllm/           ← DeepSeek client + prompts
+├── errors/            ← логирование ошибок
+├── router/            ← переключение модулей
+└── modules/           ← каждый модуль как отдельная система
+
+
+modules/
+│
+├── path_master/
+│   ├── v1/
+│   ├── v2/
+│   └── v3/
+│
+├── upsell/
+│   ├── v1/
+│   ├── v2/
+│   └── v3/
+│
+├── objections/
+│   ├── v1/
+│   ├── v2/
+│   └── v3/
+│
+├── arena/
+│   ├── v1/
+│   ├── v2/
+│   └── v3/
+│
+├── sleeping_dragon/
+├── exam/
+├── story/
+├── appbuilder/
+├── products_bundle/
+├── payments/
+├── crm_sync/
+├── leads_bridge/
+├── salary_reports/
+├── mini_webkit/
+└── trainer/
+
+engine.py          ← логика
+routes.py          ← API
+config.json        ← настройки
+README_INSTALL     ← что делает патч
+
+
+
+runtime/
+│
+├── state.db
+├── clients.db
+├── leads.db
+├── sessions/
+└── tmp/
+
+
+
+voice/
+│
+├── gateway/       ← WebSocket
+├── asr/           ← AssemblyAI клиент
+├── tts/           ← текст → голос
+└── router_voice.py
+
+
+
+deepllm/
+│
+├── client.py
+├── prompts/
+│   ├── mentor/
+│   ├── client/
+│   ├── upsell/
+│   └── arena/
+└── system/
+
+
+
+tools/
+│
+├── importer/
+├── autotest/
+├── validator/
+└── patch_applier/
+
+
+
+parts/
+│
+├── salesbot_PART_01_...
+├── salesbot_PART_02_...
+│
+└── salesbot_PART_66_...
+
+
+

@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_45_mini_webkit_brand_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/apps/mini_webkit/brand/v1",
+      "dst": "apps/mini_webkit/brand/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

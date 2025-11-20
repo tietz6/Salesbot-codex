@@ -1,0 +1,31 @@
+
+:root{
+  --bg:#0f0f14;--card:#15151d;--accent:#ff6fb4;--accent2:#ffd166;
+  --text:#e9e9ee;--muted:#b6b6c3;--success:#28c790;--warning:#ffb703;--danger:#ef476f;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;}
+.container{max-width:1040px;margin:24px auto;padding:0 16px}
+.header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 16px rgba(255,111,180,.45)}
+.brand{font-weight:700;letter-spacing:.3px}
+.toolbar{margin-left:auto;display:flex;gap:10px}
+.btn{padding:8px 12px;border-radius:12px;border:1px solid #2a2a35;background:#1a1a24;color:var(--text);cursor:pointer;transition:.2s}
+.btn:hover{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,111,180,.15)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid #242433;border-radius:16px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.card h3{margin:0 0 8px 0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.badge{padding:4px 8px;border-radius:999px;background:#1d1d27;border:1px solid #2c2c3a;color:var(--muted);font-size:12px}
+.badge.success{border-color:rgba(40,199,144,.35);color:#baf2da}
+.badge.warn{border-color:rgba(255,183,3,.35);color:#ffe8b5}
+.badge.danger{border-color:rgba(239,71,111,.35);color:#ffc4d1}
+.footer{opacity:.7;margin-top:30px;font-size:13px}
+.kpi{display:flex;gap:16px;flex-wrap:wrap}
+.kpi .item{flex:1 1 160px;background:#13131a;border:1px solid #242433;border-radius:14px;padding:12px}
+.kpi .item .label{color:var(--muted);font-size:12px}
+.kpi .item .value{font-size:20px;font-weight:700}
+.card .cta{display:flex;gap:8px;margin-top:10px}
+.link{color:var(--accent);text-decoration:none}
+.link:hover{text-decoration:underline}
+.watermark{position:fixed;right:12px;top:12px;opacity:.6;font-size:12px;padding:6px 10px;border-radius:12px;background:#14141c;border:1px solid #262636;box-shadow:0 0 16px rgba(255,111,180,.25)}

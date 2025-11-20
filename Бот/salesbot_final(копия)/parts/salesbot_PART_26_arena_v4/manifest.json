@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_26_arena_v4",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/modules/arena/v4",
+      "dst": "modules/arena/v4"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

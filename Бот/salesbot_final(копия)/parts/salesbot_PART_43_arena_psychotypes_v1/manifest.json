@@ -1,0 +1,20 @@
+{
+  "pack_name": "PART_43_arena_psychotypes_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/arena_psychotypes/v1",
+      "dst": "modules/arena_psychotypes/v1"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/arena/v4/glue_psychotypes.py",
+      "dst": "modules/arena/v4/glue_psychotypes.py"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

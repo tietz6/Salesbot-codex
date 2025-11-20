@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_48_dashboard_manager_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/apps/dashboard_manager/v1",
+      "dst": "apps/dashboard_manager/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_21_products_bundle_v1_quality",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/products/bundle/v1",
+      "dst": "products/bundle/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": false,
+    "touch_startup": true
+  }
+}

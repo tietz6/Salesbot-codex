@@ -1,0 +1,17 @@
+modules/master_path/v3/
+    roles/
+    personas/
+    rules/
+    transitions/
+    emotional_model/
+    product_knowledge/
+    coaching/
+    scoring/
+    errors/
+    prompts/
+    glue/
+    routes.py
+    service.py
+    engine.py
+    README.md
+    manifest.json

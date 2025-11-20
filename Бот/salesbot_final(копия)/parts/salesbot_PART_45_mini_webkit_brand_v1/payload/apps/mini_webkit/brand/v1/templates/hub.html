@@ -1,0 +1,59 @@
+
+{% extends "base.html" %}
+{% block content %}
+  <div class="kpi">
+    <div class="item"><div class="label">Тренировки</div><div class="value">{{ stats.sessions }}</div></div>
+    <div class="item"><div class="label">Средний балл</div><div class="value">{{ stats.avg_score }}</div></div>
+    <div class="item"><div class="label">Возражения закрыто</div><div class="value">{{ stats.objections_closed }}</div></div>
+    <div class="item"><div class="label">Апсейлов</div><div class="value">{{ stats.upsells }}</div></div>
+  </div>
+
+  <div style="height:12px"></div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Путь Мастера</h3>
+      <div class="badges">
+        <div class="badge success">Оценка 82/100</div>
+        <div class="badge">Этапов: 6</div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="/mini/brand/go/master">Начать</a>
+        <a class="link" href="/mini/brand/rubric">Показать рубрику</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Арена</h3>
+      <div class="badges">
+        <div class="badge warn">Уровень: hard</div>
+        <div class="badge">Психотипов: 8</div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="/mini/brand/go/arena">Старт схватки</a>
+        <a class="link" href="/mini/brand/arena/info">Подробнее</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Возражения</h3>
+      <div class="badges">
+        <div class="badge danger">Жёсткий режим</div>
+        <div class="badge">Классификатор + Штрафы</div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="/mini/brand/go/obj">Тренировать</a>
+        <a class="link" href="/mini/brand/obj/info">Как это работает</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Доп. продажи</h3>
+      <div class="badges">
+        <div class="badge">Выгода/экономия</div>
+        <div class="badge">Bundle-пакеты</div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="/mini/brand/go/upsell">Смоделировать</a>
+        <a class="link" href="/mini/brand/upsell/info">Схема расчёта</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

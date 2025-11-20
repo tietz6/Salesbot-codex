@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_60_Trainer_Core_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/trainer_core/v1",
+      "dst": "modules/trainer_core/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

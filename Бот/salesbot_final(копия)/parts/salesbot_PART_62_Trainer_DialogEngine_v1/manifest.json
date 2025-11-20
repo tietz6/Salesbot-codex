@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_62_Trainer_DialogEngine_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/trainer_dialog_engine/v1",
+      "dst": "modules/trainer_dialog_engine/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

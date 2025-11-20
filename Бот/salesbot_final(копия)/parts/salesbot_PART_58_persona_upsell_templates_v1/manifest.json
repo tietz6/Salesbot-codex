@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_58_persona_upsell_templates_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/persona_upsell_templates/v1",
+      "dst": "modules/persona_upsell_templates/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

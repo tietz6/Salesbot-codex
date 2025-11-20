@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_05_apps_mini_webkit_v2",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/apps/mini_webkit/v2",
+      "dst": "apps/mini_webkit/v2"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": false,
+    "touch_startup": true
+  }
+}

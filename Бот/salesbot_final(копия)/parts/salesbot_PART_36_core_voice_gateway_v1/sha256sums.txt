@@ -1,0 +1,4 @@
+c9a1aa20c173b36b92a9232e02b72dcf704a0ada37efe57e49ac6b1f3c009a40  manifest.json
+ef852d1025a1b06a9772ac1068e69475b35b77710d9fc844c5390b73f7864ed8  payload/core/voice_gateway/v1/__init__.py
+e70136680a8998c5595a4ee336b92d5e3f944074bd129d69407465008127afe5  payload/core/voice_gateway/v1/README_INSTALL.txt
+c04f82a0b3997ca553b02dfb9a7b187dd16df1dc67cb981836f0c94ef18e5c67  payload/core/voice_gateway/v1/pipeline.py

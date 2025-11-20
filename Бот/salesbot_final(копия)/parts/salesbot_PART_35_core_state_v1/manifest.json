@@ -1,0 +1,14 @@
+{
+  "pack_name": "PART_35_core_state_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/core/state/v1",
+      "dst": "core/state/v1"
+    }
+  ],
+  "post_hooks": {
+    "touch_startup": true
+  }
+}

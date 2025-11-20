@@ -1,0 +1,20 @@
+{
+  "pack_name": "PART_42_upsell_pricing_glue_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/upsell_pricing_glue/v1",
+      "dst": "modules/upsell_pricing_glue/v1"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/upsell/v3/glue_pricing.py",
+      "dst": "modules/upsell/v3/glue_pricing.py"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

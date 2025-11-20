@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_23_master_path_v3",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/modules/master_path/v3",
+      "dst": "modules/master_path/v3"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

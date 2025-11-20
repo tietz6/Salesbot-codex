@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_33_payments_v2",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/modules/payments/v2",
+      "dst": "modules/payments/v2"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

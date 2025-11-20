@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_22_bridges_crm_api_bridge_v4",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/bridges/crm_api_bridge/v4",
+      "dst": "bridges/crm_api_bridge/v4"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

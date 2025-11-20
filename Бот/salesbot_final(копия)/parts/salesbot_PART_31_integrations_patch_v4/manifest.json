@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_31_integrations_patch_v4",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/integrations/patch_v4",
+      "dst": "integrations/patch_v4"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

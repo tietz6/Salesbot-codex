@@ -1,0 +1,10 @@
+{
+  "parts_dir": "..\\..\\parts",
+  "target_dir": "..\\..\\api",
+  "apply": ["*"],
+  "options": {
+    "merge": true,
+    "overwrite": true,
+    "create_dirs": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "pack_name": "PART_34_startup_final_autobuilder_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/startup.py",
+      "dst": "startup.py"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/main.py",
+      "dst": "main.py"
+    },
+    {
+      "op": "REPLACE",
+      "src": "payload/router_autoload.py",
+      "dst": "router_autoload.py"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/autobuilder",
+      "dst": "autobuilder"
+    },
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/smoke_tests",
+      "dst": "smoke_tests"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_19_public_private_api_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/api",
+      "dst": "api"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

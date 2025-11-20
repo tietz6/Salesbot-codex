@@ -1,0 +1,14 @@
+{
+  "pack_name": "PART_36_core_voice_gateway_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/core/voice_gateway/v1",
+      "dst": "core/voice_gateway/v1"
+    }
+  ],
+  "post_hooks": {
+    "touch_startup": true
+  }
+}

@@ -1,0 +1,45 @@
+arena/
+└─ v1/
+   ├─ README.md                           # что внутри, как автосборщик склеит
+   ├─ meta/
+   │  ├─ manifest.yaml                    # версия, языки, счета, размеры, cheksum
+   │  └─ guidelines.md                    # правила тона «На Счастье», эмодзи, стиль
+   ├─ system_prompts/
+   │  ├─ arena_system_ru.md               # системные промты DeepSeek (RU)
+   │  ├─ arena_system_ky.md               # (KY) при необходимости
+   │  └─ arena_system_en.md               # (EN) опционально
+   ├─ personas/
+   │  ├─ personas_core.jsonl              # 80–120 типажей: тёплый/сомневающийся/…
+   │  └─ personas_extended.jsonl          # региональные/культурные нюансы
+   ├─ scenarios/
+   │  ├─ warm_path.jsonl                  # сценарии «Путь Мастера» в арене
+   │  ├─ objections.jsonl                 # возражения: предоплата/цена/доверие/время
+   │  ├─ trust_building.jsonl             # мостики доверия: аналогии, примеры
+   │  ├─ upsell.jsonl                     # «Вкус Победы»: второй жанр, анимация, кавер
+   │  ├─ reengage.jsonl                   # «вернуть диалог» (RE-ENGAGE)
+   │  └─ endings.jsonl                    # финальные ветки: успех/неуспех/нейтрально
+   ├─ language_kits/
+   │  ├─ ru/
+   │  │  ├─ lexicon.jsonl                 # частые фразы/эмодзи/вежливость
+   │  │  └─ analogies.jsonl               # маникюр/ресторан/бронь/рынок — готовые
+   │  └─ ky/
+   │     ├─ lexicon.jsonl                 # (по мере надобности)
+   │     └─ analogies.jsonl
+   ├─ rubrics/
+   │  ├─ scoring_rubric.yaml              # шкалы: приветствие/эмпатия/закрытие/этика
+   │  ├─ dragon_mistakes.yaml             # «Спящий Дракон»: типовые ошибки и советы
+   │  └─ feedback_templates.md            # шаблоны отчётов «что улучшить»
+   ├─ datasets/
+   │  ├─ qa_pairs.jsonl                   # пары «реплика клиента → эталонный ответ»
+   │  ├─ mini_stories.jsonl               # короткие истории клиентов для прогрева
+   │  └─ price_frames.jsonl               # якорение стоимости/ценность/пакеты
+   ├─ playbooks/
+   │  ├─ path_master.md                   # пошаговые чек-листы тренировочных боёв
+   │  ├─ shield_sword.md                  # как закрывать конкретные возражения
+   │  └─ taste_of_victory.md              # допродажи без давления
+   ├─ evaluation/
+   │  ├─ examples_good.md                 # лучшие разборы (аннотированные)
+   │  ├─ examples_bad.md                  # анти-примеры + как исправить
+   │  └─ checklists.md                    # короткие чек-листы перед «боем»
+   └─ i18n/
+      └─ mapping.yaml                     # переключатели языков/тональности

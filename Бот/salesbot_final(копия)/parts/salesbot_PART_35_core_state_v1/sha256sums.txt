@@ -1,0 +1,4 @@
+68e0f2f48e2c1ef9cb3853ad24a20b3acfa497556101f56bc5485332690a012e  manifest.json
+e575a4c32992b9b212c2578ae11bc6b6c2b09bf2b78147d2cc2831cfd6341bdb  payload/core/state/v1/__init__.py
+b9ed2564716240fb6f465634a669f964b581f0b7a8c92dc78bec4b827fd5c9ef  payload/core/state/v1/README_INSTALL.txt
+8b6c383cabe074b9bf69b63bb69818a071e173c39b8f336b4d1f328c112fd929  payload/core/state/v1/store.py

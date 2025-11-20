@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_10_tools_utilities",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/tools",
+      "dst": "tools"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": false,
+    "touch_startup": true
+  }
+}

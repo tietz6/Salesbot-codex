@@ -1,0 +1,5 @@
+FILE  manifest.json
+FILE  payload/modules/upsell_song_strategy/v2/service.py
+FILE  payload/modules/upsell_song_strategy/v2/routes.py
+FILE  payload/modules/upsell_song_strategy/v2/__init__.py
+FILE  payload/modules/upsell_song_strategy/v2/data/upsell_scripts.json

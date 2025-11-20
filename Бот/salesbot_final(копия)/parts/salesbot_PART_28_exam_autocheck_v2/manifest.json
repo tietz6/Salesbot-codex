@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_28_exam_autocheck_v2",
+  "version": 1,
+  "operations": [
+    {
+      "op": "REPLACE",
+      "src": "payload/modules/exam_autocheck/v2",
+      "dst": "modules/exam_autocheck/v2"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}

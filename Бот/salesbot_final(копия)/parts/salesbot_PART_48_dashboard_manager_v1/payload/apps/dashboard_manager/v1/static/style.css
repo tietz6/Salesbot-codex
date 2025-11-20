@@ -1,0 +1,20 @@
+
+@import url('/mini/brand/static/brand.css');
+.chart{
+  margin-top:20px;
+  padding:16px;
+  border-radius:16px;
+  background:var(--card);
+  border:1px solid #272733;
+}
+.table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:16px;
+}
+.table th, .table td{
+  padding:8px 10px;
+  border-bottom:1px solid #2f2f3a;
+  text-align:left;
+}
+.h1{font-size:24px;font-weight:700;margin:0 0 12px 0}

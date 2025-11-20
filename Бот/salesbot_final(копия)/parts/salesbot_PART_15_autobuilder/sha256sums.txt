@@ -1,0 +1,3 @@
+78836507993a8cc4a5989e118fb2e5ff0f1a5256f6174995e2e8d028c0d44011  manifest.json
+b98459c92b15c7c45cbfebaa93ddbaad29130a4142dfef29ffe12ff735b6518b  payload/autobuilder/__init__.py
+f2b6a428dd04a795d1b70880307dd22cf0c72bd712aaa65b25799a55062b324d  payload/autobuilder/runner.py

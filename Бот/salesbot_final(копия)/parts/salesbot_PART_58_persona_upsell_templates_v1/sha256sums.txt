@@ -1,0 +1,5 @@
+FILE  manifest.json
+FILE  payload/modules/persona_upsell_templates/v1/service.py
+FILE  payload/modules/persona_upsell_templates/v1/routes.py
+FILE  payload/modules/persona_upsell_templates/v1/__init__.py
+FILE  payload/modules/persona_upsell_templates/v1/data/persona.json

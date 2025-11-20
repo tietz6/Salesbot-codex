@@ -1,0 +1,15 @@
+{
+  "pack_name": "PART_65_Trainer_Story_Collection_v1",
+  "version": 1,
+  "operations": [
+    {
+      "op": "ADD_ONLY",
+      "src": "payload/modules/trainer_story_collection/v1",
+      "dst": "modules/trainer_story_collection/v1"
+    }
+  ],
+  "post_hooks": {
+    "rebuild_routes": true,
+    "touch_startup": true
+  }
+}
